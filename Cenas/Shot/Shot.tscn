@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://d2cbwxh12n1rw"]
+
+[ext_resource type="Script" path="res://cenas/Shot/Shot.cs" id="1_e8do5"]
+[ext_resource type="Texture2D" path="res://images/shot.png" id="2_7atn8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a258a"]
+
+[node name="Area2D" type="Area2D" unique_id=1492133335]
+script = ExtResource("1_e8do5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=567829784]
+shape = SubResource("RectangleShape2D_a258a")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=121152739]
+texture = ExtResource("2_7atn8")
