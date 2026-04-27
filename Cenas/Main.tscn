@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://q54ho5y18qfu"]
+
+[ext_resource type="PackedScene" uid="uid://cfbv4grr4j1u8" path="res://cenas/player/player.tscn" id="1_en8ld"]
+[ext_resource type="Script" path="res://cenas/Main.cs" id="1_r54cn"]
+[ext_resource type="PackedScene" uid="uid://d2cbwxh12n1rw" path="res://cenas/Shot/Shot.tscn" id="2_r54cn"]
+
+[node name="Main" type="Node" unique_id=158826955]
+script = ExtResource("1_r54cn")
+
+[node name="Player" parent="." unique_id=1428932031 instance=ExtResource("1_en8ld")]
+
+[node name="Shot" parent="." unique_id=1492133335 instance=ExtResource("2_r54cn")]
