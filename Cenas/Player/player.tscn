@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://cfbv4grr4j1u8"]
+
+[ext_resource type="Texture2D" path="res://images/Player.png" id="1_8or6t"]
+[ext_resource type="Script" path="res://cenas/player/Player.cs" id="1_unwft"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_unwft"]
+size = Vector2(24, 26)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kthid"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_8or6t")
+}],
+"loop": true,
+"name": &"Teste",
+"speed": 5.0
+}]
+
+[node name="Area2D" type="Area2D" unique_id=1428932031]
+script = ExtResource("1_unwft")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=935923141]
+position = Vector2(125, 104)
+shape = SubResource("RectangleShape2D_unwft")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=370412322]
+position = Vector2(124.99999, 104.49999)
+scale = Vector2(1.25, 1.4375)
+sprite_frames = SubResource("SpriteFrames_kthid")
+animation = &"Teste"
+metadata/_edit_group_ = true
+
+[node name="Marker2D" type="Marker2D" parent="." unique_id=714213053]
+position = Vector2(125, 106)
+metadata/_edit_group_ = true
