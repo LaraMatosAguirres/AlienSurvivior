@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cfbv4grr4j1u8"]
 
-[ext_resource type="Texture2D" path="res://images/Player.png" id="1_8or6t"]
-[ext_resource type="Script" path="res://cenas/player/Player.cs" id="1_unwft"]
+[ext_resource type="Script" uid="uid://dsw7bfwgiepuh" path="res://Cenas/Player/Player.cs" id="1_unwft"]
+[ext_resource type="Texture2D" uid="uid://cj5mdfswutvph" path="res://Assets/Images/Player.png" id="2_8xljj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_unwft"]
 size = Vector2(24, 26)
@@ -10,7 +10,10 @@ size = Vector2(24, 26)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_8or6t")
+"texture": ExtResource("2_8xljj")
+}, {
+"duration": 1.0,
+"texture": null
 }],
 "loop": true,
 "name": &"Teste",

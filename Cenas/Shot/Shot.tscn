@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://d2cbwxh12n1rw"]
 
-[ext_resource type="Script" path="res://cenas/Shot/Shot.cs" id="1_e8do5"]
-[ext_resource type="Texture2D" path="res://images/shot.png" id="2_7atn8"]
+[ext_resource type="Script" uid="uid://8oxoot3ek54v" path="res://Cenas/Shot/Shot.cs" id="1_e8do5"]
+[ext_resource type="Texture2D" uid="uid://upkkuowjof1h" path="res://Assets/Images/shot.png" id="2_drac2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a258a"]
 
@@ -12,4 +12,4 @@ script = ExtResource("1_e8do5")
 shape = SubResource("RectangleShape2D_a258a")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=121152739]
-texture = ExtResource("2_7atn8")
+texture = ExtResource("2_drac2")

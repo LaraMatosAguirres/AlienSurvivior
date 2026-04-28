@@ -19,10 +19,11 @@ public partial class Main : Node
     {
     }
 
-    void OnPlayerShoot(Vector2 position)
+    void OnPlayerShoot(Vector2 position, Vector2 direction)
     {
         Shot shot = bulletScene.Instantiate<Shot>();
         shot.GlobalPosition = position;
+        shot.Direction = direction;
         AddChild(shot);
     }
 }

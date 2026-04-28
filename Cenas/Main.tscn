@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://q54ho5y18qfu"]
 
-[ext_resource type="PackedScene" uid="uid://cfbv4grr4j1u8" path="res://cenas/player/player.tscn" id="1_en8ld"]
-[ext_resource type="Script" path="res://cenas/Main.cs" id="1_r54cn"]
-[ext_resource type="PackedScene" uid="uid://d2cbwxh12n1rw" path="res://cenas/Shot/Shot.tscn" id="2_r54cn"]
+[ext_resource type="PackedScene" uid="uid://cfbv4grr4j1u8" path="res://Cenas/Player/Player.tscn" id="1_en8ld"]
+[ext_resource type="Script" uid="uid://bvjdk52s5fgrm" path="res://Cenas/Main.cs" id="1_r54cn"]
+[ext_resource type="PackedScene" uid="uid://d2cbwxh12n1rw" path="res://Cenas/Shot/Shot.tscn" id="2_r54cn"]
 
 [node name="Main" type="Node" unique_id=158826955]
 script = ExtResource("1_r54cn")
