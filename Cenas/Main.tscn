@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://cfbv4grr4j1u8" path="res://Cenas/Player/Player.tscn" id="1_en8ld"]
 [ext_resource type="Script" uid="uid://bvjdk52s5fgrm" path="res://Cenas/Main.cs" id="1_r54cn"]
 [ext_resource type="PackedScene" uid="uid://d2cbwxh12n1rw" path="res://Cenas/Shot/Shot.tscn" id="2_r54cn"]
+[ext_resource type="PackedScene" uid="uid://melbd4hg0iqc" path="res://Cenas/Enemy/Enemy.tscn" id="4_n6gaj"]
 
 [node name="Main" type="Node" unique_id=158826955]
 script = ExtResource("1_r54cn")
@@ -10,3 +11,6 @@ script = ExtResource("1_r54cn")
 [node name="Player" parent="." unique_id=1428932031 instance=ExtResource("1_en8ld")]
 
 [node name="Shot" parent="." unique_id=1492133335 instance=ExtResource("2_r54cn")]
+
+[node name="Enemy" parent="." unique_id=1368220360 node_paths=PackedStringArray("player") instance=ExtResource("4_n6gaj")]
+player = NodePath("../Player")

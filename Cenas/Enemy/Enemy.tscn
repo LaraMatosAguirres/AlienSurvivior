@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://melbd4hg0iqc"]
+
+[ext_resource type="Texture2D" uid="uid://26hbwtki4n2y" path="res://Assets/Images/EnemyTexture.png" id="1_60k1v"]
+[ext_resource type="Script" uid="uid://c43ebff2a2bk8" path="res://Cenas/Enemy/Enemy.cs" id="1_jl6ns"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jl6ns"]
+size = Vector2(53, 51)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jusor"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_60k1v")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Area2D" type="Area2D" unique_id=1368220360]
+script = ExtResource("1_jl6ns")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1849965608]
+position = Vector2(-1.5, 15.5)
+shape = SubResource("RectangleShape2D_jl6ns")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=82493795]
+position = Vector2(-1.5, 16)
+scale = Vector2(3.3125, 3)
+sprite_frames = SubResource("SpriteFrames_jusor")
+metadata/_edit_group_ = true
